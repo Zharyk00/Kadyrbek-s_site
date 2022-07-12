@@ -1,0 +1,30 @@
+.Home__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 560px;
+      grid-template-rows: 560px;
+}
+
+.Home__container .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+.Home__container .content .black {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: white;
+  row-gap: 5px;
+}
+
+.Home__container .content .white {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  row-gap: 5px;
+}
+/*# sourceMappingURL=home.css.map */

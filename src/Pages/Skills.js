@@ -1,0 +1,13 @@
+import React from "react";
+import "../Styles/Skills/skills.css"
+
+function Skills({ track, trackstate }) {
+
+    return (
+        <div className="Skill__container" id="Skill">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolorem officiis tenetur error, et dolore adipisci quaerat minima ea magni soluta nemo dolor beatae excepturi temporibus assumenda dolorum nam obcaecati?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolorem officiis tenetur error, et dolore adipisci quaerat minima ea magni soluta nemo dolor beatae excepturi temporibus assumenda dolorum nam obcaecati?Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolorem officiis tenetur error, et dolore adipisci quaerat minima ea magni soluta nemo dolor beatae excepturi temporibus assumenda dolorum nam obcaecati?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolorem officiis tenetur error, et dolore adipisci quaerat minima ea magni soluta nemo dolor beatae excepturi temporibus assumenda dolorum nam obcaecati?Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolorem officiis tenetur error, et dolore adipisci quaerat minima ea magni soluta nemo dolor beatae excepturi temporibus assumenda dolorum nam obcaecati?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolorem officiis tenetur error, et dolore adipisci quaerat minima ea magni soluta nemo dolor beatae excepturi temporibus assumenda dolorum nam obcaecati?Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolorem officiis tenetur error, et dolore adipisci quaerat minima ea magni soluta nemo dolor beatae excepturi temporibus assumenda dolorum nam obcaecati?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolorem officiis tenetur error, et dolore adipisci quaerat minima ea magni soluta nemo dolor beatae excepturi temporibus assumenda dolorum nam obcaecati?Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolorem officiis tenetur error, et dolore adipisci quaerat minima ea magni soluta nemo dolor beatae excepturi temporibus assumenda dolorum nam obcaecati?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolorem officiis tenetur error, et dolore adipisci quaerat minima ea magni soluta nemo dolor beatae excepturi temporibus assumenda dolorum nam obcaecati?Lorem ipsum dolor sit amet consectetur adipisicing elit
+        </div>
+    )
+}
+
+export default Skills;

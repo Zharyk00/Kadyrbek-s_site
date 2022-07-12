@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import About from "./Pages/About";
+import Home from "./Pages/Home";
+import Nav from "./Pages/Nav";
+import Skills from "./Pages/Skills";
+import Work from "./Pages/Work";
+import '../src/Styles/App/app.css'
 
 function App() {
+  const [toggle, setToggle] = useState(true)
+  const [track, setTreck] = useState('Home')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={toggle ? 'black' : 'white'}>
+      <Nav toggle={toggle} state={setToggle} track={track} trackstate={setTreck} />
+      <Home toggle={toggle} />
+      <About />
+      <Skills />
+      <Work />
     </div>
   );
 }

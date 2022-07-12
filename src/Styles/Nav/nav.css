@@ -1,0 +1,41 @@
+.main__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-rows: 80px;
+      grid-template-rows: 80px;
+  grid-auto-flow: column;
+  background: grey;
+  position: fixed;
+  width: 100%;
+}
+
+.main__container .logo {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__container .container {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__container .container a {
+  display: -ms-grid;
+  display: grid;
+  cursor: pointer;
+}
+/*# sourceMappingURL=nav.css.map */
