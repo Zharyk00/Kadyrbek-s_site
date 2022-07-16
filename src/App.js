@@ -5,18 +5,20 @@ import Nav from "./Pages/Nav";
 import Skills from "./Pages/Skills";
 import Work from "./Pages/Work";
 import '../src/Styles/App/app.css'
+import Contact from "./Pages/Contacts";
 
 function App() {
   const [toggle, setToggle] = useState(true)
   const [track, setTreck] = useState('Home')
 
   return (
-    <div className={toggle ? 'black' : 'white'}>
+    <div className={!toggle ? 'black' : 'white'}>
       <Nav toggle={toggle} state={setToggle} track={track} trackstate={setTreck} />
       <Home toggle={toggle} />
       <About />
       <Skills />
-      <Work />
+      {/* <Work />  */}
+      <Contact toggle={toggle} />
     </div>
   );
 }

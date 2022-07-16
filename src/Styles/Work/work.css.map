@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACb,UAAU,EAAE,IAAI;CAAG",
-    "sources": [
-        "work.sass"
-    ],
-    "names": [],
-    "file": "work.css"
-}
+{"version":3,"sources":["work.sass","work.css"],"names":[],"mappings":"AAAA;EACI,gBAAA;ACCJ","file":"work.css"}

@@ -1,1 +1,28 @@
-/* No CSS *//*# sourceMappingURL=about.css.map */
+.About__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  place-items: center;
+}
+.About__container .photo {
+  background-image: url("./kadyrbek.jpg");
+  height: 345px;
+  width: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 50%;
+}
+.About__container .about {
+  display: grid;
+  grid-template-rows: 225px 225px;
+  place-items: center;
+}
+.About__container .about .who {
+  font-size: 30px;
+}
+.About__container .about div {
+  display: grid;
+}
+.About__container .about div p {
+  font-size: 25px;
+}/*# sourceMappingURL=about.css.map */

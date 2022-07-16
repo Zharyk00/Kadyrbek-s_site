@@ -1,0 +1,47 @@
+.Contact__container
+    display: grid
+    grid-template-columns: repeat(auto-fit , minmax(400px , 1fr))
+    grid-template-rows: 550px
+
+    .container
+        display: grid
+        place-content: center
+        justify-items: center
+        row-gap: 30px
+
+        .contact
+            display: grid
+            row-gap: 20px
+            justify-items: center
+
+            .container_input
+                display: grid
+                #outlined-textarea
+                    width: 350px
+                    color: #d18b34
+                    &::placeholder
+                        color: grey
+                #outlined-multiline-static
+                    width: 350px
+                    color: #d18b34
+                    &::placeholder
+                        color: grey
+
+            Button
+                        width: 130px
+                        height: 40px
+
+    .wrapper
+        display: grid
+        place-content: center
+        row-gap: 50px
+
+        p
+            display: grid
+            font-size: 30px
+
+        .link_icons
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            place-items: center
+            row-gap: 50px

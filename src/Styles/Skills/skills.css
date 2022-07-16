@@ -1,4 +1,14 @@
 .Skill__container {
-  margin-top: 80px;
+  display: grid;
+  grid-template-rows: 60px 450px;
 }
-/*# sourceMappingURL=skills.css.map */
+.Skill__container .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+.Skill__container .container .icons {
+  display: grid;
+  place-items: center;
+  row-gap: 30px;
+}/*# sourceMappingURL=skills.css.map */

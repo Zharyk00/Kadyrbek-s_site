@@ -1,0 +1,64 @@
+.Contact__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: 550px;
+}
+.Contact__container .container {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  row-gap: 30px;
+}
+.Contact__container .container .contact {
+  display: grid;
+  row-gap: 20px;
+  justify-items: center;
+}
+.Contact__container .container .contact .container_input {
+  display: grid;
+}
+.Contact__container .container .contact .container_input #outlined-textarea {
+  width: 350px;
+  color: #d18b34;
+}
+.Contact__container .container .contact .container_input #outlined-textarea::-moz-placeholder {
+  color: grey;
+}
+.Contact__container .container .contact .container_input #outlined-textarea:-ms-input-placeholder {
+  color: grey;
+}
+.Contact__container .container .contact .container_input #outlined-textarea::placeholder {
+  color: grey;
+}
+.Contact__container .container .contact .container_input #outlined-multiline-static {
+  width: 350px;
+  color: #d18b34;
+}
+.Contact__container .container .contact .container_input #outlined-multiline-static::-moz-placeholder {
+  color: grey;
+}
+.Contact__container .container .contact .container_input #outlined-multiline-static:-ms-input-placeholder {
+  color: grey;
+}
+.Contact__container .container .contact .container_input #outlined-multiline-static::placeholder {
+  color: grey;
+}
+.Contact__container .container .contact Button {
+  width: 130px;
+  height: 40px;
+}
+.Contact__container .wrapper {
+  display: grid;
+  place-content: center;
+  row-gap: 50px;
+}
+.Contact__container .wrapper p {
+  display: grid;
+  font-size: 30px;
+}
+.Contact__container .wrapper .link_icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  row-gap: 50px;
+}/*# sourceMappingURL=contact.css.map */

@@ -1,16 +1,20 @@
 .Home__container
     display: grid
     grid-template-rows: 560px
+
     .content
         display: grid
-        grid-template-columns: repeat(2 , 1fr)
+        grid-template-columns: repeat(auto-fit , minmax(400px , 1fr))
         place-items: center
+
         .black
             display: grid
-            place-items: center
+            justify-items: start
             color: white
-            row-gap: 5px
+            row-gap: 15px
+
         .white
             display: grid
             place-items: center
+            justify-items: start
             row-gap: 5px

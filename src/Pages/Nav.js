@@ -2,6 +2,8 @@ import React from 'react'
 import '../Styles/Nav/nav.css'
 import { motion } from "framer-motion"
 import { Link, } from 'react-scroll'
+import { RiMoonFill } from "react-icons/ri"
+import { BsSunFill } from "react-icons/bs"
 
 function Nav({ state, toggle, track, trackstate }) {
     const handleSetActive = (to) => {
@@ -9,24 +11,26 @@ function Nav({ state, toggle, track, trackstate }) {
     }
 
     return (
-        <div className='main__container'>
-            <div className='logo'>{track}</div>
+        <motion.div initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1, transition: { duration: 1 } }} className='main__container'>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 0.5, delay: 1.4 } }} className='logo'>{track}</motion.div>
             <ul className='container'>
-                <motion.div initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1, transition: { duration: 1, delay: 1.4 } }}>
+                <motion.div initial={{ x: -100, opacity: 0 }} whileHover={{ scale: 1.1, y: -5, }} animate={{ x: 0, opacity: 1, transition: { duration: 1, delay: 1.4 } }}>
                     <Link activeClass="active" to="Home" spy={true} smooth={true} offset={-100} duration={500} onSetActive={handleSetActive}>Home</Link>
                 </motion.div>
-                <motion.div initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1, transition: { duration: 1, delay: 1.1 } }}>
+                <motion.div initial={{ x: -100, opacity: 0 }} whileHover={{ scale: 1.1, y: -5, }} animate={{ x: 0, opacity: 1, transition: { duration: 1, delay: 1.1 } }}>
                     <Link activeClass="active" to="About" spy={true} smooth={true} offset={-100} duration={500} onSetActive={handleSetActive}>About</Link>
                 </motion.div>
-                <motion.div initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1, transition: { duration: 1, delay: 0.8 } }}>
-                    <Link activeClass="active" to="Skill" spy={true} smooth={true} offset={-100} duration={500} onSetActive={handleSetActive}>Skills</Link>
+                <motion.div initial={{ x: -100, opacity: 0 }} whileHover={{ scale: 1.1, y: -5, }} animate={{ x: 0, opacity: 1, transition: { duration: 1, delay: 0.8 } }}>
+                    <Link activeClass="active" to="Skill" spy={true} smooth={true} offset={-90} duration={500} onSetActive={handleSetActive}>Skills</Link>
                 </motion.div>
-                <motion.div initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1, transition: { duration: 1, delay: 0.5 } }}>
+                {/* <motion.div initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1, transition: { duration: 1, delay: 0.5 } }}>
                     <Link activeClass="active" to="Work" spy={true} smooth={true} offset={-100} duration={500} onSetActive={handleSetActive}>Work</Link>
+                </motion.div> */}
+                <motion.div initial={{ x: -100, opacity: 0 }} whileHover={{ scale: 1.1, y: -5, }} animate={{ x: 0, opacity: 1, transition: { duration: 1, delay: 0.2 } }}>
+                    <Link activeClass="active" to="Contacts" spy={true} smooth={true} offset={-100} duration={500} onSetActive={handleSetActive}>Contacts</Link>
                 </motion.div>
-                <button onClick={() => state(!toggle)}>toggle</button>
-            </ul>
-        </div>
+                <div style={{ fontSize: "24px", cursor: "pointer" }} onClick={() => state(!toggle)}>{toggle ? <BsSunFill /> : <RiMoonFill />}</div>            </ul>
+        </motion.div>
     )
 }
 
