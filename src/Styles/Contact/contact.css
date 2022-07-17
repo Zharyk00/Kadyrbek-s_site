@@ -30,6 +30,11 @@
 .Contact__container .container .contact .container_input #outlined-textarea::placeholder {
   color: grey;
 }
+@media (max-width: 430px) {
+  .Contact__container .container .contact .container_input #outlined-textarea {
+    width: 300px;
+  }
+}
 .Contact__container .container .contact .container_input #outlined-multiline-static {
   width: 350px;
   color: #d18b34;
@@ -42,6 +47,11 @@
 }
 .Contact__container .container .contact .container_input #outlined-multiline-static::placeholder {
   color: grey;
+}
+@media (max-width: 430px) {
+  .Contact__container .container .contact .container_input #outlined-multiline-static {
+    width: 300px;
+  }
 }
 .Contact__container .container .contact Button {
   width: 130px;

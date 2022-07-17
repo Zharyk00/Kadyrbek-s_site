@@ -1,6 +1,6 @@
 .About__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   place-items: center;
 }
 .About__container .photo {
@@ -12,6 +12,12 @@
   background-size: 100% 100%;
   border-radius: 50%;
 }
+@media (max-width: 430px) {
+  .About__container .photo {
+    width: 300px;
+    height: 245px;
+  }
+}
 .About__container .about {
   display: grid;
   grid-template-rows: 225px 225px;
@@ -22,6 +28,9 @@
 }
 .About__container .about div {
   display: grid;
+}
+.About__container .about div h1 {
+  font-size: 30px;
 }
 .About__container .about div p {
   font-size: 25px;

@@ -1,5 +1,6 @@
 
-import React from "react"
+import React, { useRef, useState } from "react"
+import emailjs from '@emailjs/browser';
 import "../Styles/Contact/contact.css"
 import { FiInstagram } from "react-icons/fi"
 import { BsWhatsapp, BsTelegram } from "react-icons/bs"
@@ -9,6 +10,16 @@ import SendIcon from '@mui/icons-material/Send';
 
 function Contact({ toggle }) {
 
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+
+    const ref = useRef()
+
+    const onSubmit = (e) => {
+        e.preventDefault()
+        emailjs.sendForm('Kadyrbek06', 'template_3bv1ix9', ref.current, 'eSJWlpw5-OQN0IEE4')
+    }
 
     return (
         <div className="Contact__container" id="Contacts">
@@ -16,14 +27,16 @@ function Contact({ toggle }) {
             <div className="container">
                 <h3>Say Hello</h3>
 
-                <div className="contact">
+                <form ref={ref} onSubmit={onSubmit} className="contact" autoComplete="off">
                     <div className="container_input">
                         <TextField
                             className="input"
                             id="outlined-textarea"
                             label="Name"
                             placeholder="Name"
-
+                            name="name"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
                             focused
                         />
                     </div>
@@ -33,7 +46,9 @@ function Contact({ toggle }) {
                             id="outlined-textarea"
                             label="Email"
                             placeholder="Email"
-
+                            name="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             focused
                         />
                     </div>
@@ -45,6 +60,9 @@ function Contact({ toggle }) {
                             placeholder="message"
                             label="Multiline"
                             multiline
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                            name="message"
                             focused
                             rows={4}
 
@@ -52,11 +70,11 @@ function Contact({ toggle }) {
                         />
                     </div>
                     <div>
-                        <Button variant="outlined" endIcon={<SendIcon />}>
+                        <Button type='submit' variant="outlined" endIcon={<SendIcon />}>
                             Send
                         </Button>
                     </div>
-                </div>
+                </form>
             </div>
 
             <div className="wrapper">

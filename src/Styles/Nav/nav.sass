@@ -1,6 +1,6 @@
 .main__container
     display: grid
-    grid-template-columns: repeat(auto-fit , minmax(300px , 1fr))
+    grid-template-columns: repeat(2 , 1fr)
     grid-template-rows: 80px
     grid-auto-flow: column
     background-color: #0000000e
@@ -8,17 +8,29 @@
     position: fixed
     width: 100%
     z-index: 5
+    @media (max-width: 430px)
+        display: grid
+        grid-template-columns: 1fr
+        justify-content: space-evenly
+        padding: 0px 10px
+        width: 88%
 
     .logo
         display: grid
         align-items: center
         justify-content: center
         font-size: 30px
+        @media (max-width: 430px)
+            display: none
+
     .container
         display: grid
         grid-auto-flow: column
         column-gap: 30px
         align-items: center
+        @media (max-width: 430px)
+            column-gap: 10px
+
         a
             display: grid
             cursor: pointer
