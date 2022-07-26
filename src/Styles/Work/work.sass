@@ -1,2 +1,48 @@
-.Work__container
-    margin-top: 80px
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital@1&display=swap&family=Courgette&display=swap&family=Edu+TAS+Beginner:wght@500;700')
+
+.Work_container
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(380px , 1fr))
+    place-items: center
+    row-gap: 80px
+
+    .content
+        display: grid
+        place-items: center
+
+        img
+            width: 300px
+            height: 250px
+
+        .text
+            font-size: 25px
+            font-family: 'Ibarra Real Nova', serif
+            cursor: pointer
+
+.ReactModal__Body--open
+    overflow: hidden
+
+
+.work_wrapper
+    display: flex
+    // display: grid
+    // grid-template-columns: repeat(2, 1fr)
+
+    .images
+        width: 200px
+        height: 200px
+        margin-right: 25px
+
+    .wrapper_text
+        display: grid
+        place-items: center
+        font-size: 22px
+
+        a
+            text-decoration: none
+
+            &:hover
+                text-decoration: underline
+    .but
+        display: grid
+        place-content: end

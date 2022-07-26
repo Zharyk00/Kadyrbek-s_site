@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500;700&family=Ibarra+Real+Nova:ital@1&display=swap')
+    
 .Skill__container
     display: grid
-    grid-template-rows: 60px 450px
+    grid-template-rows: 60px 550px
+
+    h1
+        font-family: 'Edu TAS Beginner', cursive
+        text-align: center
+
     .container
         display: grid
         grid-template-columns: repeat(3, 1fr)
@@ -9,4 +16,17 @@
         .icons
             display: grid
             place-items: center
-            row-gap: 30px
+            row-gap: 10px
+
+            .icon
+                font-size: 60px
+
+                @media (max-width: 410px)
+                    font-size: 50px
+
+            p
+                font-size: 18px
+                font-family: 'Ibarra Real Nova', serif
+
+                @media(max-width: 410px)
+                    font-size: 16px

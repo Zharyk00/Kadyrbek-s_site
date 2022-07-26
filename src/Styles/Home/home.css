@@ -1,17 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
 .Home__container {
   display: grid;
   grid-template-rows: 560px;
 }
-@media (max-width: 430px) {
+@media (max-width: 900px) {
   .Home__container {
-    grid-template-rows: 650px;
+    grid-template-rows: 750px;
   }
 }
 .Home__container .content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   place-items: center;
-  padding-top: 80px;
+  padding-top: 100px;
+  font-family: "Rubik Moonrocks", cursive;
+}
+@media (max-width: 900px) {
+  .Home__container .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .Home__container .content .icon {
   display: grid;
@@ -23,23 +30,60 @@
   height: 400px;
   place-items: center;
 }
-@media (max-width: 430px) {
+@media (max-width: 600px) {
   .Home__container .content .icon .me {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 410px) {
+  .Home__container .content .icon .me {
+    width: 280px;
+    height: 280px;
   }
 }
 .Home__container .content .black {
   display: grid;
+  place-items: center;
   justify-items: start;
-  color: white;
-  row-gap: 15px;
+  row-gap: 5px;
 }
 .Home__container .content .black h1 {
   font-size: 80px;
 }
+@media (max-width: 900px) {
+  .Home__container .content .black h1 {
+    font-size: 75px;
+  }
+}
+@media (max-width: 600px) {
+  .Home__container .content .black h1 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 410px) {
+  .Home__container .content .black h1 {
+    font-size: 55px;
+  }
+}
 .Home__container .content .black .red {
   color: red;
+}
+@media (max-width: 900px) {
+  .Home__container .content .black .red {
+    font-size: 75px;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .Home__container .content .black .red {
+    font-size: 70px;
+  }
+}
+@media (max-width: 410px) {
+  .Home__container .content .black .red {
+    font-size: 55px;
+  }
 }
 .Home__container .content .white {
   display: grid;
@@ -50,14 +94,37 @@
 .Home__container .content .white h1 {
   font-size: 80px;
 }
+@media (max-width: 900px) {
+  .Home__container .content .white h1 {
+    font-size: 75px;
+  }
+}
+@media (max-width: 600px) {
+  .Home__container .content .white h1 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 410px) {
+  .Home__container .content .white h1 {
+    font-size: 55px;
+  }
+}
 .Home__container .content .white .red {
   color: red;
 }
-@media (max-width: 430px) {
-  .Home__container .content .white h1 {
-    font-size: 65px;
-  }
+@media (max-width: 900px) {
   .Home__container .content .white .red {
+    font-size: 75px;
     margin-top: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .Home__container .content .white .red {
+    font-size: 70px;
+  }
+}
+@media (max-width: 410px) {
+  .Home__container .content .white .red {
+    font-size: 55px;
   }
 }/*# sourceMappingURL=home.css.map */

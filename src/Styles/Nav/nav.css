@@ -1,5 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap&family=Courgette&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .main__container {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 80px;
   grid-auto-flow: column;
@@ -7,16 +14,11 @@
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   position: fixed;
-  width: 100%;
   z-index: 5;
 }
-@media (max-width: 430px) {
+@media (max-width: 600px) {
   .main__container {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: space-evenly;
-    padding: 0px 10px;
-    width: 88%;
+    grid-template-columns: none;
   }
 }
 .main__container .logo {
@@ -24,8 +26,9 @@
   align-items: center;
   justify-content: center;
   font-size: 30px;
+  font-family: "Secular One", sans-serif;
 }
-@media (max-width: 430px) {
+@media (max-width: 600px) {
   .main__container .logo {
     display: none;
   }
@@ -37,13 +40,21 @@
        column-gap: 30px;
   align-items: center;
 }
-@media (max-width: 430px) {
+@media (max-width: 410px) {
   .main__container .container {
     -moz-column-gap: 10px;
          column-gap: 10px;
   }
 }
 .main__container .container a {
-  display: grid;
   cursor: pointer;
+  font-family: "Courgette", cursive;
+}
+.main__container .container .active {
+  font-size: 19px;
+}
+@media (max-width: 410px) {
+  .main__container .container .active {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=nav.css.map */

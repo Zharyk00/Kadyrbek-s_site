@@ -1,20 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500;700&family=Ibarra+Real+Nova:ital@1&display=swap')
+
 .About__container
     display: grid
-    grid-template-columns: repeat(auto-fit, minmax(450px , 1fr))
+    grid-template-columns: repeat(2, 1fr)
     place-items: center
+    @media (max-width: 900px)
+        grid-template-columns: repeat(1, 1fr)
 
     .photo
+        overflow: hidden
         background-image: url('./kadyrbek.jpg')
-        height: 345px
         width: 400px
+        height: 345px
+        border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%
+        background-size: cover
         background-position: center
         background-repeat: no-repeat
-        background-size: 100% 100%
-        border-radius: 50%
+        animation: blob 3.75s linear infinite
+        
 
-        @media (max-width: 430px)
-            width: 300px
-            height: 245px
+        @keyframes blob 
+            0%, 100%
+                border-radius: 
+                    42% 56% 72% 28% / 42% 42% 56% 48%
+
+            33%
+                border-radius: 
+                    72% 28% 48% 48% / 28% 28% 72% 72%
+
+            66% 
+                border-radius: 
+                    100% 56% 56% 100% / 100% 100% 56% 56%
+                
+
+        @media (max-width: 600px)
+            width: 350px
+            height: 295px
+
+        @media (max-width: 410px)
+            width: 280px
+            height: 225px
 
     .about
         display: grid
@@ -22,11 +47,26 @@
         place-items: center
         .who
             font-size: 30px
+            font-family: 'Edu TAS Beginner', cursive
+            font-weight: bold
 
         div
-            display: grid
+            font-family: 'Ibarra Real Nova', serif
 
             h1
                 font-size: 30px
+                @media (max-width: 600px)
+                    font-size: 28px
+
+                @media (max-width: 410px)
+                    justify-items: center
+                    font-size: 25px
+
             p
                 font-size: 25px
+
+                @media (max-width: 600px)
+                    font-size: 22px
+
+                @media (max-width: 410px)
+                    font-size: 20px

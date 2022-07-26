@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500;700&family=Ibarra+Real+Nova:ital@1&display=swap");
 .Skill__container {
   display: grid;
-  grid-template-rows: 60px 450px;
+  grid-template-rows: 60px 550px;
+}
+.Skill__container h1 {
+  font-family: "Edu TAS Beginner", cursive;
+  text-align: center;
 }
 .Skill__container .container {
   display: grid;
@@ -10,5 +15,22 @@
 .Skill__container .container .icons {
   display: grid;
   place-items: center;
-  row-gap: 30px;
+  row-gap: 10px;
+}
+.Skill__container .container .icons .icon {
+  font-size: 60px;
+}
+@media (max-width: 410px) {
+  .Skill__container .container .icons .icon {
+    font-size: 50px;
+  }
+}
+.Skill__container .container .icons p {
+  font-size: 18px;
+  font-family: "Ibarra Real Nova", serif;
+}
+@media (max-width: 410px) {
+  .Skill__container .container .icons p {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=skills.css.map */

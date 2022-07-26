@@ -1,13 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500;700&family=Ibarra+Real+Nova:ital@1&display=swap");
 .Contact__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 550px;
+}
+@media (max-width: 900px) {
+  .Contact__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .Contact__container .container {
   display: grid;
   place-content: center;
   justify-items: center;
   row-gap: 30px;
+}
+.Contact__container .container h1 {
+  font-family: "Edu TAS Beginner", cursive;
 }
 .Contact__container .container .contact {
   display: grid;
@@ -30,9 +39,14 @@
 .Contact__container .container .contact .container_input #outlined-textarea::placeholder {
   color: grey;
 }
-@media (max-width: 430px) {
+@media (max-width: 600px) {
   .Contact__container .container .contact .container_input #outlined-textarea {
-    width: 300px;
+    width: 340px;
+  }
+}
+@media (max-width: 410px) {
+  .Contact__container .container .contact .container_input #outlined-textarea {
+    width: 280px;
   }
 }
 .Contact__container .container .contact .container_input #outlined-multiline-static {
@@ -48,25 +62,40 @@
 .Contact__container .container .contact .container_input #outlined-multiline-static::placeholder {
   color: grey;
 }
-@media (max-width: 430px) {
+@media (max-width: 600px) {
   .Contact__container .container .contact .container_input #outlined-multiline-static {
-    width: 300px;
+    width: 340px;
+  }
+}
+@media (max-width: 410px) {
+  .Contact__container .container .contact .container_input #outlined-multiline-static {
+    width: 280px;
   }
 }
 .Contact__container .container .contact Button {
   width: 130px;
   height: 40px;
 }
-.Contact__container .wrapper {
+.Contact__container .contact_wrapper {
   display: grid;
   place-content: center;
   row-gap: 50px;
 }
-.Contact__container .wrapper p {
-  display: grid;
+.Contact__container .contact_wrapper p {
   font-size: 30px;
+  font-family: "Ibarra Real Nova", serif;
 }
-.Contact__container .wrapper .link_icons {
+@media (max-width: 600px) {
+  .Contact__container .contact_wrapper p {
+    font-size: 28px;
+  }
+}
+@media (max-width: 410px) {
+  .Contact__container .contact_wrapper p {
+    font-size: 24px;
+  }
+}
+.Contact__container .contact_wrapper .link_icons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
