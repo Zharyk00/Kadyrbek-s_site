@@ -93,7 +93,7 @@ function Contact({ toggle }) {
                         </a>
                     </motion.div>
                     <motion.div whileHover={{ scale: 1.1, y: -5,}}>
-                        <a href="https://github.com/Sultanaalievich">
+                        <a href="https://github.com/Kadyrbek00">
                             <VscGithub style={!toggle ? { color: "#fff", fontSize: '44px' } : { color: '#000', fontSize: '44px' }} />
                         </a>
                     </motion.div>

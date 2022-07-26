@@ -27,13 +27,13 @@ const datas = [
     name: "Amanat City",
     link: "http://amanatcity.kg"
   },
-  {
-    id: 4,
-    title: "Lorem4 ipsum dolor sit amet consectetur adipisicing elit. Error, veniam ipsam voluptas quibusdam placeat ipsum inventore deleniti dolorem laudantium blanditiis provident magni! Molestias officiis cum laborum eum repudiandae ea rem.",
-    srcImg: "https://im.mashina.kg/tachka/dealers/f242f61ddc45935789d14ececbe979f9_logo.jpg",
-    name: "Auto Mall",
-    link: "https://automall.kg"
-  },
+  // {
+  //   id: 4,
+  //   title: "Lorem4 ipsum dolor sit amet consectetur adipisicing elit. Error, veniam ipsam voluptas quibusdam placeat ipsum inventore deleniti dolorem laudantium blanditiis provident magni! Molestias officiis cum laborum eum repudiandae ea rem.",
+  //   srcImg: "https://im.mashina.kg/tachka/dealers/f242f61ddc45935789d14ececbe979f9_logo.jpg",
+  //   name: "Auto Mall",
+  //   link: "https://automall.kg"
+  // },
 ]
 
 const BootstrapDialogTitle = (props) => {
@@ -84,33 +84,34 @@ function Works() {
               onRequestClose={() => setActive(false)}
               className='Modal'
 
-              style={{
-                overlay: {
-                  position: 'fixed',
-                  zIndex: 6,
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  bottom: 0,
-                  backdropFilter: "blur(1px)",
-                },
-                content: {
-                  position: 'absolute',
-                  top: '120px',
-                  left: '200px',
-                  right: '200px',
-                  bottom: '120px',
-                  border: '1px solid #ccc',
-                  backgroundColor: "#fff",
-                  overflow: 'auto',
-                  WebkitOverflowScrolling: 'touch',
-                  borderRadius: '15px',
-                  outline: 'none',
-                  padding: '20px',
-                }
-              }}
+              // style={{
+              //   overlay: {
+              //     position: 'fixed',
+              //     zIndex: 6,
+              //     top: 0,
+              //     left: 0,
+              //     right: 0,
+              //     bottom: 0,
+              //     backdropFilter: "blur(1px)",
+              //   },
+              //   content: {
+              //     position: 'absolute',
+              //     top: '120px',
+              //     left: '200px',
+              //     right: '200px',
+              //     bottom: '120px',
+              //     border: '1px solid #ccc',
+              //     backgroundColor: "#fff",
+              //     overflow: 'auto',
+              //     WebkitOverflowScrolling: 'touch',
+              //     borderRadius: '15px',
+              //     outline: 'none',
+              //     padding: '20px',
+              //   }
+              // }}
               bodyOpenClassName={"ReactModal__Body--open"}
-              overlayClassName={'work_wrapper images wrapper_text but'}
+              overlayClassName={'work_wrapper images wrapper_text Overlay'}
+              
             >
               <BootstrapDialogTitle id="customized-dialog-title" onClose={() => setActive(false)}>
                 {data.name}

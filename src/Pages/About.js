@@ -12,7 +12,7 @@ function About() {
                 <p className="who">Who is Kadyrbek ?</p>
                 <div>
                     <h1>Hey I am Kadyrbek , FrontEnd developer</h1>
-                    <p>I use my passion and skills to create amazing  and digital <br />products by useign various tools and animations</p>
+                    <p>I use my passion and skills to create amazing  and digital products by useign various tools and animations</p>
                 </div>
             </div>
         </div>

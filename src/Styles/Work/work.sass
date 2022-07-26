@@ -14,6 +14,10 @@
             width: 300px
             height: 250px
 
+            @media (max-width: 415px)
+                width: 250px
+                height: 200px
+
         .text
             font-size: 25px
             font-family: 'Ibarra Real Nova', serif
@@ -22,11 +26,42 @@
 .ReactModal__Body--open
     overflow: hidden
 
+.Overlay
+    position: fixed
+    z-index: 6
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    backdrop-filter: blur(1px)
+
+.Modal
+    position: absolute
+    top: 120px
+    left: 200px
+    right: 200px
+    bottom: 120px
+    border: 1px solid #ccc
+    background-color: #fff
+    overflow: auto
+    -webkit-overflow-scrolling: touch
+    border-radius: 15px
+    outline: none
+    padding: 20px
+
+    @media (max-width: 850px)
+        left: 50px
+        right: 50px
+
+    @media (max-width: 415px)
+        left: 16px
+        right: 16px
 
 .work_wrapper
     display: flex
-    // display: grid
-    // grid-template-columns: repeat(2, 1fr)
+    @media (max-width: 415px)
+        display: grid
+        justify-items: center
 
     .images
         width: 200px
@@ -38,11 +73,11 @@
         place-items: center
         font-size: 22px
 
+        @media (max-width: 415px)
+            font-size: 18px
+
         a
             text-decoration: none
 
             &:hover
                 text-decoration: underline
-    .but
-        display: grid
-        place-content: end

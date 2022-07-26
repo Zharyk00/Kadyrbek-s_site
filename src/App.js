@@ -7,7 +7,9 @@ import Works from "./Pages/Works";
 import '../src/Styles/App/app.css'
 import Contact from "./Pages/Contacts";
 import ScrollToTop from "./Pages/Scroll";
+import Modal from "react-modal"
 
+Modal.setAppElement('#root')
 function App() {
   const [toggle, setToggle] = useState(true)
   const [track, setTreck] = useState('Home')
